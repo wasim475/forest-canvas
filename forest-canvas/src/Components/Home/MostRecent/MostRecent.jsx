@@ -19,10 +19,10 @@ const MostRecent = () => {
         <div className="container mx-auto mt-10 ">
             <div className="bg-gradient-to-r from-amber-200 to-yellow-400 lg:p-20 rounded-xl">
                 <div className="text-center mb-10">
-                    <h1 className="text-5xl">Recently Added Crafts</h1>
+                    <h1 className="text-5xl font-playfair">Recently Added Crafts</h1>
                     <p></p>
                 </div>
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid lg:grid-cols-3 gap-3">
                     {
                         lastThreeCraft.map((singleCraft, index)=>(
                             <ViewRecentCraft singleCraft={singleCraft} key={index}></ViewRecentCraft>
