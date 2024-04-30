@@ -28,7 +28,7 @@ const UpdateCraft = () => {
 
         
 
-        fetch(`http://localhost:3000/crafts/${_id}`, {
+        fetch(`https://forest-canvas-server-kvaco45gw-wasim-hossains-projects.vercel.app/crafts/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

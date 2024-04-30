@@ -24,8 +24,9 @@ const AddCraftItem = () => {
 
         console.log(formData);
 
-        fetch('http://localhost:3000/crafts', {
+        fetch('https://forest-canvas-server-kvaco45gw-wasim-hossains-projects.vercel.app/crafts', {
             method: 'POST',
+            mode: 'no-cors',
             headers: {
                 'content-type': 'application/json'
             },

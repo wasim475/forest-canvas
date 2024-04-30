@@ -7,7 +7,7 @@ const [craftDatas, setCraftData]= useState([])
 
 useEffect(()=>{
 
-    fetch("http://localhost:3000/crafts")
+    fetch("https://forest-canvas-server-kvaco45gw-wasim-hossains-projects.vercel.app/crafts")
     .then(res=> res.json())
     .then(resData=>setCraftData(resData))
  
