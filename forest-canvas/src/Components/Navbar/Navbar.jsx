@@ -26,13 +26,6 @@ const Navbar = () => {
         <li>
             <NavLink to='/myartcraftlist'>My Art&Craft List</NavLink>
         </li>
-        <li>
-            <NavLink to='/extra'>Extra section</NavLink>
-        </li>
-        <li>
-            <NavLink to='/extra'>Extra section</NavLink>
-        </li>
-     
     </>
         let {user, logOut} = useContext(AuthContex)
 
@@ -79,9 +72,7 @@ const Navbar = () => {
                             </div>
                         </div>
                             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                                <li>
-                                    <Link to="/my-profile">My Profile</Link>
-                                </li>
+                                
                                 <li>
                                     <Link onClick={handleLogout}>Log Out</Link>
                                     <ToastContainer></ToastContainer>

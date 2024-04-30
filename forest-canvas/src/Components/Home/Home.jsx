@@ -1,6 +1,7 @@
 import Banner from "./Bannar/Banner";
 import CraftItems from "./CraftItemsSection/CraftItems";
 import EditorPack from "./EditorPack/EditorPack";
+import MostRecent from "./MostRecent/MostRecent";
 
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
             <Banner/>
             <CraftItems/>
             <EditorPack/>
+            <MostRecent/>
         </div>
     );
 };
