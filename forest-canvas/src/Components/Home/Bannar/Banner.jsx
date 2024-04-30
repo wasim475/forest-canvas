@@ -14,7 +14,7 @@ const Banner = () => {
                     <a href="#slide4" className="btn btn-circle">❮</a> 
                     <a href="#slide2" className="btn btn-circle">❯</a>
                     </div>
-                    <div className="lg:w-2/6 md:w-4/6 border-2 rounded-lg p-4 w-full text-center absolute bottom-6 right-0 md:right-3 text-white">
+                    <div className="lg:w-2/6 md:w-4/6 border-2 rounded-lg hover:bg-black hover:text-white p-4 w-full text-center absolute bottom-6 right-0 md:right-3 text-white">
                         <h1 className="text-2xl font-bold font-playfair mb-2">Mystic Woodland Haven</h1>
                         <p className="font-playfair text-gray-400">
                         Embrace serenity in this enchanted forest retreat, a captivating masterpiece that invites tranquility seekers to immerse themselves..
@@ -28,7 +28,7 @@ const Banner = () => {
                     <a href="#slide1" className="btn btn-circle">❮</a> 
                     <a href="#slide3" className="btn btn-circle">❯</a>
                     </div>
-                    <div className="lg:w-2/6 md:w-4/6 w-full text-center absolute bottom-6 right-0 md:right-3 text-blue-100 border-2 rounded-lg p-4">
+                    <div className="lg:w-2/6 md:w-4/6 w-full text-center hover:bg-black hover:text-white absolute bottom-6 right-0 md:right-3 text-blue-100 border-2 rounded-lg p-4">
                         <h1 className="text-2xl font-bold font-playfair mb-2">Forest and River Converge</h1>
                         <p className="font-playfair text-white font-semibold">
                         A picturesque harmony where verdant trees meet flowing waters, offering a tranquil haven for nature enthusiasts.
@@ -43,7 +43,7 @@ const Banner = () => {
                     <a href="#slide4" className="btn btn-circle">❯</a>
                     </div>
 
-                    <div className="lg:w-2/6 md:w-4/6 w-full text-center absolute bottom-6 right-0 md:right-3 text-white border-2 rounded-lg p-4">
+                    <div className="lg:w-2/6 md:w-4/6 w-full text-center absolute hover:bg-black hover:text-white bottom-6 right-0 md:right-3 text-white border-2 rounded-lg p-4">
                         <h1 className="text-2xl font-bold font-playfair mb-2">Embrace Natures Symphony</h1>
                         <p className="font-playfair text-white">
                         Elevate your space with this captivating riverside forest scene, where tranquility and beauty merge in harmonious allure.
