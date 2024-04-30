@@ -41,7 +41,7 @@ const UpdateCraft = () => {
             if(data.insertedId){
                 Swal.fire({
                     title: 'Success!',
-                    text: 'Coffee Added Successfully',
+                    text: 'Your Craft info Updated Successfully',
                     icon: 'success',
                     confirmButtonText: 'Cool'
                   })
