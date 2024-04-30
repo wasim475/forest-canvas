@@ -37,14 +37,14 @@ const router = createBrowserRouter([
       {
         path: '/allartcraftitems',
         element: <AllArtcraftItems></AllArtcraftItems>,
-        loader: ()=> fetch("https://forest-canvas-server-kvaco45gw-wasim-hossains-projects.vercel.app/crafts")
+        loader: ()=> fetch("https://forest-canvas-server.vercel.app/crafts")
       },
       {
         path: '/allartcraftitems/:id',
         element: <PrivateRoute>
           <ViewCraftDetails></ViewCraftDetails>
         </PrivateRoute>,
-        loader: ()=> fetch("https://forest-canvas-server-kvaco45gw-wasim-hossains-projects.vercel.app/crafts")
+        loader: ()=> fetch("https://forest-canvas-server.vercel.app/crafts")
       },
       {
         path: '/craftitem',
@@ -59,14 +59,14 @@ const router = createBrowserRouter([
         element: <PrivateRoute>
           <MyArtCraftList></MyArtCraftList>
         </PrivateRoute>,
-        loader: ()=> fetch("https://forest-canvas-server-kvaco45gw-wasim-hossains-projects.vercel.app/crafts")
+        loader: ()=> fetch("https://forest-canvas-server.vercel.app/crafts")
       },
       {
         path: '/updatecraft/:id',
         element: <PrivateRoute>
           <UpdateCraft></UpdateCraft>
         </PrivateRoute>,
-        loader: ({params})=> fetch(`https://forest-canvas-server-kvaco45gw-wasim-hossains-projects.vercel.app/crafts/${params.id}`)
+        loader: ({params})=> fetch(`https://forest-canvas-server.vercel.app/crafts/${params.id}`)
       },
       {
         path: '/login',
