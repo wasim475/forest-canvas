@@ -24,16 +24,16 @@ const UpdateCraft = () => {
         const userName = form.userName.value;
         const photoUrl = form.photoUrl.value;
 
-        const formData ={itemName,subcategoryName,shortDescription,price,processingTime,rating,customization, stockStatus,userEmail,userName,photoUrl}
+        const updateFormData ={itemName,subcategoryName,shortDescription,price,processingTime,rating,customization, stockStatus,userEmail,userName,photoUrl}
 
         console.log(formData);
 
-        fetch('http://localhost:3000/crafts', {
-            method: 'POST',
+        fetch(`http://localhost:3000/crafts/${_id}`, {
+            method: 'PUT',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(formData)
+            body: JSON.stringify(updateFormData)
         })
         .then(res => res.json())
         .then(data => {
