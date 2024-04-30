@@ -20,6 +20,7 @@ import ViewCraftDetails from './Components/Navbar/NavItems/AllArtcraftItems/View
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import UpdateCraft from './Components/Navbar/NavItems/MyArtCraftList/UpdateCraft';
 // ..
 AOS.init();
 
@@ -59,6 +60,13 @@ const router = createBrowserRouter([
           <MyArtCraftList></MyArtCraftList>
         </PrivateRoute>,
         loader: ()=> fetch("http://localhost:3000/crafts")
+      },
+      {
+        path: '/updatecraft/:id',
+        element: <PrivateRoute>
+          <UpdateCraft></UpdateCraft>
+        </PrivateRoute>,
+        loader: ({params})=> fetch(`http://localhost:3000/crafts/${params.id}`)
       },
       {
         path: '/login',
