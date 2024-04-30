@@ -16,6 +16,12 @@ import AllArtcraftItems from './Components/Navbar/NavItems/AllArtcraftItems/AllA
 import AddCraftItem from './Components/Navbar/NavItems/AddCraftItem/AddCraftItem';
 import MyArtCraftList from './Components/Navbar/NavItems/MyArtCraftList/MyArtCraftList';
 import PrivateRoute from './private Route/PrivateRoute';
+import ViewCraftDetails from './Components/Navbar/NavItems/AllArtcraftItems/ViewCraftDetails';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const router = createBrowserRouter([
   {
@@ -29,19 +35,30 @@ const router = createBrowserRouter([
       },
       {
         path: '/allartcraftitems',
-        element: <AllArtcraftItems></AllArtcraftItems>
+        element: <AllArtcraftItems></AllArtcraftItems>,
+        loader: ()=> fetch("http://localhost:3000/crafts")
+      },
+      {
+        path: '/allartcraftitems/:id',
+        element: <PrivateRoute>
+          <ViewCraftDetails></ViewCraftDetails>
+        </PrivateRoute>,
+        loader: ()=> fetch("http://localhost:3000/crafts")
       },
       {
         path: '/craftitem',
         element: <PrivateRoute>
             <AddCraftItem></AddCraftItem>
-        </PrivateRoute>
+        </PrivateRoute>,
+        
+        
       },
       {
         path: '/myartcraftlist',
         element: <PrivateRoute>
           <MyArtCraftList></MyArtCraftList>
-        </PrivateRoute>
+        </PrivateRoute>,
+        loader: ()=> fetch("http://localhost:3000/crafts")
       },
       {
         path: '/login',

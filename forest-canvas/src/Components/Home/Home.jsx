@@ -1,9 +1,14 @@
+import Banner from "./Bannar/Banner";
+import CraftItems from "./CraftItemsSection/CraftItems";
+import EditorPack from "./EditorPack/EditorPack";
 
 
 const Home = () => {
     return (
         <div>
-            <h1>home</h1>
+            <Banner/>
+            <CraftItems/>
+            <EditorPack/>
         </div>
     );
 };

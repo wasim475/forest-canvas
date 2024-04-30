@@ -1,0 +1,57 @@
+[
+    {
+      "craft_id": 1,
+      "title": "Woodland Fairy House",
+      "description": "Handcrafted fairy house made from natural materials found in the forest. Perfect for adding a touch of magic to any garden or fairy tale display.",
+      "price": "$25",
+      "availability": "In Stock",
+      "rating": 4.5,
+      "image": "https://i.ibb.co/k3Xz8Fn/slide3.webp"
+    },
+    {
+      "craft_id": 2,
+      "title": "Forest Animal Figurines Set",
+      "description": "Set of hand-painted forest animal figurines including deer, fox, rabbit, and owl. Ideal for nature-inspired play or as decorative accents.",
+      "price": "$15",
+      "availability": "Out of Stock",
+      "rating": 4.0,
+      "image": "https://example.com/forest_animal_figurines.jpg"
+    },
+    {
+      "craft_id": 3,
+      "title": "Leaf Print Artwork",
+      "description": "Botanical leaf print artwork featuring intricate leaf patterns collected from the forest. Adds a rustic charm to any space.",
+      "price": "$30",
+      "availability": "In Stock",
+      "rating": 4.7,
+      "image": "https://example.com/leaf_print_artwork.jpg"
+    },
+    {
+      "craft_id": 4,
+      "title": "Twig Photo Frame",
+      "description": "Rustic photo frame made from natural twigs gathered from the forest. Perfect for displaying cherished memories with a touch of nature.",
+      "price": "$20",
+      "availability": "In Stock",
+      "rating": 4.2,
+      "image": "https://example.com/twig_photo_frame.jpg"
+    },
+    {
+      "craft_id": 5,
+      "title": "Forest Scented Candle",
+      "description": "Hand-poured soy wax candle infused with the soothing scent of pine needles, cedarwood, and fresh forest air. Creates a calming ambiance.",
+      "price": "$12",
+      "availability": "In Stock",
+      "rating": 4.8,
+      "image": "https://example.com/forest_scented_candle.jpg"
+    },
+    {
+      "craft_id": 6,
+      "title": "Moss Terrarium Kit",
+      "description": "DIY moss terrarium kit containing all the materials needed to create a miniature forest ecosystem. Makes a unique and eco-friendly gift.",
+      "price": "$18",
+      "availability": "In Stock",
+      "rating": 4.6,
+      "image": "https://example.com/moss_terrarium_kit.jpg"
+    }
+  ]
+  

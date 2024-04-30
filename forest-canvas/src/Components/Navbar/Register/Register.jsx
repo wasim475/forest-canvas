@@ -61,7 +61,7 @@ const Register = () => {
         <div className='container mx-auto'>
             <div>
                 <div className="lg:w-1/2 mx-auto">
-                <h2 className='text-3xl font-worksans font-bold'>Create a Haven Hub account</h2>
+                <h2 className='text-3xl font-worksans font-bold'>Create a Forest Canvas account</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
                             <div className="form-control">
                             <label className="label">

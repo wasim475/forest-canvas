@@ -58,7 +58,7 @@ const Login = () => {
             <div className="container mx-auto">
                <div className="lg:w-1/2 mx-auto">
                <h2 className='text-3xl font-worksans font-bold'>Log in</h2>
-               <p className="mb-4 font-playfair">Continue to <span className="font-worksans font-semibold text-red-500">Haven Hub</span></p>
+               <p className="mb-4 font-playfair">Continue to <span className="font-worksans font-semibold text-red-500">Forest Canvas</span></p>
                     <form onSubmit={handleLogin}>
                             <div className="form-control">
                             <label className="label">
