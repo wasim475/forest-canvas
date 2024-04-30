@@ -2,7 +2,7 @@ import { FaRegStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const ViewMyCraftData = ({myCD}) => {
+const ViewMyCraftData = ({myCD,myCraftDatas,setMyCraftDatas}) => {
     const {itemName,subcategoryName, _id, shortDescription,price,processingTime,rating,customization, stockStatus,userEmail,userName,photoUrl}= myCD
 
 
@@ -30,7 +30,9 @@ const ViewMyCraftData = ({myCD}) => {
                     text: "Your file has been deleted.",
                     icon: "success"
               });
-                }
+            }
+            const remaining = myCraftDatas.filter((myCdata)=>myCdata._id !==_id)
+            setMyCraftDatas(remaining)
             })
             }
           });

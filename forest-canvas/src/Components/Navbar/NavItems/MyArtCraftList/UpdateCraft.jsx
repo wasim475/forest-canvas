@@ -26,7 +26,7 @@ const UpdateCraft = () => {
 
         const updateFormData ={itemName,subcategoryName,shortDescription,price,processingTime,rating,customization, stockStatus,userEmail,userName,photoUrl}
 
-        console.log(formData);
+        
 
         fetch(`http://localhost:3000/crafts/${_id}`, {
             method: 'PUT',
@@ -38,7 +38,7 @@ const UpdateCraft = () => {
         .then(res => res.json())
         .then(data => {
             console.log(data);
-            if(data.insertedId){
+            if(data.modifiedCount>0){
                 Swal.fire({
                     title: 'Success!',
                     text: 'Your Craft info Updated Successfully',

@@ -1,11 +1,12 @@
 import { useLoaderData } from "react-router-dom";
 import ViewMyCraftData from "./ViewMyCraftData";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContex } from "../../../../Auth provider/AuthProvider";
 
 
 const MyArtCraftList = () => {
-    const myCraftDatas = useLoaderData()
+    const loadedMyCraftDatas = useLoaderData()
+    const [myCraftDatas, setMyCraftDatas]= useState(loadedMyCraftDatas)
     let {user} = useContext(AuthContex)
     // let myCraftData = myCraftDatas.find((myCData)=>myCData.userEmail === user.email)
     // console.log(myCraftData);
@@ -18,7 +19,7 @@ const MyArtCraftList = () => {
                     myCraftDatas.map((myCD,index)=>
                     myCD.userEmail===user.email
                     ?
-                    <ViewMyCraftData myCD ={myCD} key={index}></ViewMyCraftData>
+                    <ViewMyCraftData myCD ={myCD} myCraftDatas={myCraftDatas} setMyCraftDatas={setMyCraftDatas} key={index}></ViewMyCraftData>
                     :
                     ""
                     

@@ -58,7 +58,7 @@ const Banner = () => {
                     <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
 
-                    <div className="lg:w-2/6 md:w-4/6 w-full border-2 rounded-lg p-4 text-center absolute bottom-6 right-0 md:right-3 text-white">
+                    <div className="lg:w-2/6 md:w-4/6 w-full hover:bg-black hover:text-white border-2 rounded-lg p-4 text-center absolute bottom-6 right-0 md:right-3 text-white">
                         <h1 className="text-2xl font-bold font-playfair mb-2">Large Canvas Wall Art</h1>
                         <p className="font-playfair text-white">
                         Mystical Forest Abstract Print Modern Painting Print Large Canvas Wall Art Golden Sparks Nature Scene Wall Decor Mysterious Woodland Poster.
