@@ -17,7 +17,7 @@
 - Firebase
 
 ## How to Run Locally
-1. Clone the repository: `git clone https://github.com/yourusername/forest-canvas.git`
+1. Clone the repository: `git clone https://github.com/wasim475/forest-canvas.git`
 2. Navigate to the project directory: `cd forest-canvas`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
