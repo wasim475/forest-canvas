@@ -6,7 +6,7 @@ const MostRecent = () => {
     const [craftData, setCraftData] = useState([])
     useEffect(()=>{
 
-            fetch("https://forest-canvas-server-3h55by99a-wasim-hossains-projects.vercel.app/crafts")
+            fetch("https://forest-canvas-server.vercel.app/crafts")
             .then(res=> res.json())
             .then(resData=>setCraftData(resData))
          

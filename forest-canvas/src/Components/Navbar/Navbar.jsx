@@ -80,7 +80,11 @@ const Navbar = () => {
                             </ul>
                         </div>
                         :
+                        <>
+                            
                         <Link className="btn bg-primaryColor font-playfair" to='/login'>Login</Link>
+                        <Link className="btn bg-primaryColor font-playfair" to='/login'>regiser</Link>
+                        </>
 
                     }
                     </div>

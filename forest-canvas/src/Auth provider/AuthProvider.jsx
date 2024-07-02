@@ -4,7 +4,8 @@ import { FacebookAuthProvider, GoogleAuthProvider, updateProfile , createUserWit
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import app from '../firebase config/firebase.config';
+import app from '../firebase config/firebase.config'
+
 
 
 

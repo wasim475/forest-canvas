@@ -18,7 +18,7 @@ const ViewMyCraftData = ({myCD,myCraftDatas,setMyCraftDatas}) => {
           }).then((result) => {
             if (result.isConfirmed) {
          
-            fetch(`https://forest-canvas-server-kvaco45gw-wasim-hossains-projects.vercel.app/crafts/${_id}`,{
+            fetch(`https://forest-canvas-server.vercel.app/crafts/${_id}`,{
                 method: 'delete'
             })
             .then(res=>res.json())
